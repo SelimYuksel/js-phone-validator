@@ -1,0 +1,116 @@
+:root {
+    --color-one: #3E3491;
+    --color-two: #913E34;
+    --color-three: #287030;
+    --color-four: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    word-spacing: 50%;
+    letter-spacing: 0.8px;
+}
+
+body {
+    background-color: var(--color-one);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-cntnr {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-three);
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--color-one) 0%, var(--color-three) 100%) 1;
+}
+
+.title, .description {
+    color: var(--color-four);
+    text-align: center;
+    padding: 2%;
+}
+
+.description {
+    font-size: 130%;
+    margin-bottom: 3%;
+}
+
+.input-cntnr {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 30px;
+    flex: 0 1 50%;
+    text-align: center;
+    font-size: large;
+}
+
+input:focus {
+    outline-style: groove;
+    outline-width: .22em;
+    outline-color: var(--color-two);
+}
+
+.btn-cntnr {
+    /* border: 1px solid; */
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+    gap: 5%;
+    padding: 2%;
+}
+
+.btn-cntnr button {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border: .22em groove var(--color-one);
+    border-radius: 10%;
+    background-color: white;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: .22em solid var(--color-two);
+}
+
+.result-cntnr {
+    /* border: 1px solid; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+.result {
+    letter-spacing: 2px;
+    padding: 5px;
+    border: 1px solid var(--color-three);
+}
+
